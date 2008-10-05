@@ -1,0 +1,128 @@
+.muzume {
+	position: absolute;
+	border: 1px solid #28d524;
+	background-color: #fff;
+	border-top: 0;
+	z-index: 99999;
+	display: none;
+}
+.muzume a, .muzume b, .muzume a:hover, .muzume a:link, .muzume a:visited, .muzume a:active, .muzume td, .muzume input, .muzume div, #muzume_wiki, #muzume_wiki_iframe, #muzume_wiki_iframe textarea {
+	font-family: verdana, helvetica, sans-serif;
+	font-size: 10px;
+	color: #000;
+	text-decoration: none;
+	border: 0;
+	padding: 0;
+	margin: 0;
+	background: none;
+	background-color: transparent;
+	font-weight: normal;
+	text-align: left;
+	line-height: 12px;
+}
+#muzume_wiki iframe {
+	background-color: #fff;
+	border: 0;
+}
+#muzume_wiki {
+	border: 1px solid #28d524;
+	border-top: 0;
+}
+#muzume_wiki_iframe {
+	padding: 4px;
+}
+#muzume_wiki_iframe h1 {
+	font-family: verdana, helvetica, sans-serif;
+	font-size: 10px;
+	margin: 0; border: 0;
+	line-height: 12px;
+	padding: 0;
+	padding-bottom: 4px;
+}
+#muzume_wiki_nav {
+	position: fixed;
+	top: 3px;
+	right: 3px;
+}
+.muzume b {
+	font-weight: bold;
+}
+.muzume img {
+	border: 0;
+	display: inline;
+	float: none;
+	vertical-align: middle;
+}
+
+#muzume_wiki_iframe a, #muzume_wiki_iframe a:link, #muzume_wiki_iframe a:visited, #muzume_wiki_iframe a:active,
+.muzume a, .muzume a:link, .muzume a:visited, .muzume a:active, .muzume_test_a {
+	color: #28d524;
+	text-decoration: underline;
+}
+.muzume a, .muzume a:link, .muzume a:visited, .muzume a:active, .muzume a:hover, .muzume_test_a {
+	font-weight: bold;
+}
+.muzume div {
+	position: absolute;
+	display: block;
+}
+.muzume a:hover, #muzume_wiki_iframe a:hover {
+	color: #c00;
+	text-decoration: none;
+}
+
+.muzume td {
+	padding: 2px;
+	vertical-align: top;
+}
+.muzume input, #muzume_wiki_iframe textarea {
+	padding: 2px;
+	border: 1px solid #28d524;
+	background-color: #fff;
+}
+.muzume input.text {
+	width: 265px;
+}
+.muzume .hidden {
+	display: none;
+}
+.muzume .close {
+	position: absolute;
+	padding: 6px;
+}
+.muzume .copyright {
+	position: absolute;
+	bottom: 0;
+	height: 10px;
+	width: 100%;
+	left: 0;
+	padding: 3px 0 4px 10px;
+	border-top: 1px solid #28d524;
+	font-size: 9px;
+	color: #999;
+}
+.muzume .copyright b {
+	font-size: 9px;
+	color: #999;
+}
+a.muzumegrey, a.muzumegrey:link, a.muzumegrey:active, a.muzumegrey:visited {
+	font-size: 9px;
+	font-weight: normal;
+	color: #666;
+}
+
+.muzumemsg {
+	font-size: 9px;
+	font-weight: normal;
+	color: #333;
+}
+.muzumemsg a {
+	color: #666;
+}
+
+a.muzumehome, a.muzumehome:link, a.muzumehome:active, a.muzumehome:visited {
+	font-family: arial, sans-serif;
+	font-weight: bold;
+	color: #0c0;
+	text-decoration: none;
+}

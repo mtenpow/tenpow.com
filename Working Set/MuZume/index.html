@@ -1,0 +1,57 @@
+<html>
+<head>
+<title>MuZume :: forget me not</title>
+</head>
+<body style="background:black">
+
+<table border="0" cellspacing="0" cellpadding="0" style="position:fixed;top:10px;left:10px;">
+<tr>
+<td><a href="javascript:InstallMuZume();"><img border=0 src="images/icons/help.png" height="64" width="64" /></a>
+</td>
+<td><a href="javascript:InstallMuZume();" style="white-space:nowrap;font-family:Lucida Sans, Trebuchet MS, Tahoma, sans-serif;font-size:22px;font-weight:bold;color:white;text-shadow:#000000 3px 3px 3px;text-align:middle;text-decoration:none;">New? Click here to get started!</a></td>
+</tr>
+</table>
+
+<table border="0" cellspacing="0" cellpadding="0" style="position:fixed;top:10px;right:10px;">
+<tr>
+<td><a href="javascript:(function(){if(window.MuZumePublicInterface && window.MuZumePublicInterface.IsInitialized()){MuZumePublicInterface.Open();return;}var mzse=document.createElement('SCRIPT');mzse.src='http://www.tenpow.com/MuZume/MuZume.js';document.documentElement.appendChild(mzse);})();"><img border=0 src="images/icons/install.png" height="64" width="64" alt="MuZume" /></a>
+</td>
+<td style="white-space:nowrap;font-family:Lucida Sans, Trebuchet MS, Tahoma, sans-serif;font-size:22px;font-weight:bold;color:white;text-shadow:#000000 3px 3px 3px;text-align:middle;text-decoration:none;">&lt;- Drag this to your toolbar</td>
+</tr>
+</table>
+
+</body>
+<script language="javascript" src="http://www.tenpow.com/MuZume/MuZume.js"></script>
+<script>
+var MZApplicationObject = MuZumePublicInterface.GetClass("MZApplicationObject");
+
+// configuration module
+
+function InstallMuZume()
+{
+	MuZumePublicInterface.ShowNotification("Starting configuration wizard...");
+}
+
+var installAppObject = new MZApplicationObject("Install MuZume", "javascript:InstallMuZume();", MuZumePublicInterface.GetIcon("install.png"), "Application: Install MuZume on your computer");
+
+var InstallModule = {
+	Name:"Setup wizard not yet implemented",
+	Version:1,
+	Objects: [
+		installAppObject
+	],
+	Actions: [
+	],
+	Initialize:function(mzModuleInterface)
+	{
+	}
+};
+
+// initialize
+
+MuZumePublicInterface.SetStartText("Watch this space.");
+MuZumePublicInterface.LoadModule(InstallModule);
+MuZumePublicInterface.Open();
+
+</script>
+</html>
